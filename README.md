@@ -6,7 +6,7 @@
 
 Simple game of TicTacToe !
 
-Deployed website:
+**Deployed website**: https://tonylehuynh-tictactoejs.netlify.app/
 
 
 ### **Code explanation**
