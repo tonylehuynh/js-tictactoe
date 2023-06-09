@@ -27,8 +27,17 @@ function initialiseGame(){
 }
 
 function cellClicked(){
+	const cellIndex = this.getAttribute("cellIndex");
 
+	if(options[cellIndex] != "" || !gameRunning){
+		return;
+	}
+
+	updateCell(this, cellIndex);
+	checkWinner();
 }
+
+
 
 function restartGame(){
 	currentPlayer = "X";
