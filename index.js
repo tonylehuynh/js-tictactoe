@@ -34,10 +34,12 @@ function cellClicked(){
 	}
 
 	updateCell(this, cellIndex);
-	checkWinner();
 }
 
-
+function updateCell(cell, index){
+	options[index] = currentPlayer;
+	cell.textContent = currentPlayer;
+}
 
 function restartGame(){
 	currentPlayer = "X";
