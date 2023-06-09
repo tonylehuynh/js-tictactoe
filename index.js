@@ -16,3 +16,20 @@ const winConditions = [
 let options = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X";
 let gameRunning = false;
+
+initialiseGame();
+
+function initialiseGame(){
+	cells.forEach(cell => cell.addEventListener("click", cellClicked));
+	restartButton.addEventListener("click", restartGame);
+	statusText.textContent = `${currentPlayer}'s turn`;
+	gameRunning = true;
+}
+
+function cellClicked(){
+
+}
+
+function restartGame(){
+
+}
